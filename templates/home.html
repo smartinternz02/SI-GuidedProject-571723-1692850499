@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <style>
+        .logo{
+    height:80px;
+    width:180px;
+        }
+      .heading-one{
+        text-align: center;
+      }
+      .container{
+           background-image: url("https://vignanonline.com/themes/vignans/images/Vignan-University.webp");
+           background-size:cover;
+           height:100vh;
+           width:3200px;
+           
+    
+           
+      }
+    </style>
+     <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "b06c1763-fd50-44a9-af82-a6ef270dbfd4", // The ID of this integration.
+              region: "au-syd", // The region your integration is hosted in.
+              serviceInstanceID: "bb1e5520-3c9a-4538-93de-3fee3d8ec8e5", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><image src="https://www.vignaniit.edu.in/images/Logo.jpg" class="logo" alt="vu"></image></a>
+        
+        <div class="collapse navbar-collapse" >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ass">Assingments portal</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="container"><h1 class="heading-one">Welcome To Vignan's University</h1></div>
+</body>
+</html>
